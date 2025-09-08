@@ -3,29 +3,29 @@
 A web application for creating and managing notes.
 Users can create, edit, delete notes, assign categories, and keep their thoughts organized in a clean and intuitive interface.
 
-🔗 [Live Demo](https://movie-finder-app-three.vercel.app/)  
+🔗 [Live Demo](https://notehub-theta.vercel.app/)  
 
 ![Home page](./public/images/notehub-home.png)
 
 ## 🔍 Features:
 
-### Create notes with title, description, and category
+### 1. Create notes with title, description, and category
 
 ![Home page](./public/images/notehub-create.png)
 
-### Edit notes anytime
+### 2. Edit notes anytime
 
 ![Home page](./public/images/notehub-update.png)
 
-### Delete notes with a confirmation modal
+### 3. Delete notes with a confirmation modal
 
 ![Home page](./public/images/notehub-delete.png)
 
-### Clear input button for faster editing
+### 4. Clear input button for faster editing
 
 ![Home page](./public/images/notehub-input.png)
 
-### Smooth animations for better UX
+### 5. Smooth animations for better UX
 
 
 ## ⚙️ Technologies:
