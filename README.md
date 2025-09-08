@@ -1,43 +1,47 @@
-# 🧭 Movie Finder
+# 📝 NoteHub
 
-Movie Finder is a movie search application using The Movie Database API (TMDb). You can find movies by title, view detailed information, cast and reviews.
+A web application for creating and managing notes.
+Users can create, edit, delete notes, assign categories, and keep their thoughts organized in a clean and intuitive interface.
 
 🔗 [Live Demo](https://movie-finder-app-three.vercel.app/)  
 
-![Home page](./public/movies-home.png)
+![Home page](./public/images/notehub-home.png)
 
-## 🔍 Functionality:
+## 🔍 Features:
 
-### Search for movies by keywords
+### Create notes with title, description, and category
 
-![Home page](./public/movies-search.png)
+![Home page](./public/images/notehub-create.png)
 
-### Movie detail page
+### Edit notes anytime
 
-![Home page](./public/movies-details.png)
+![Home page](./public/images/notehub-update.png)
 
-### Cast information
+### Delete notes with a confirmation modal
 
-![Home page](./public/movies-cast.png)
+![Home page](./public/images/notehub-delete.png)
 
-### User reviews
+### Clear input button for faster editing
 
-![Home page](./public/movies-reviews.png)
+![Home page](./public/images/notehub-input.png)
 
-### Navigation saved on page refresh (React Router)
+### Smooth animations for better UX
 
 
 ## ⚙️ Technologies:
 
 - React
-- React Router
+    - React paginate
+    - React response
+    - React spinner
+    - React icons
+- TanStack
 - Axios
-- React Suspense & Lazy
 - Vite
+- Formik
 - Yup
-- React icons
-- React modal
-- Tailwind
+- AOS
+- clsx
 
 ---
 
@@ -45,30 +49,24 @@ Movie Finder is a movie search application using The Movie Database API (TMDb). 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/sofi-dobriak/movie-finder-app.git
+   git clone https://github.com/sofi-dobriak/notehub.git
 2. Navigate to the project folder:
     ```bash
-    cd movie-finder-app
+    cd notehub
 3. Install dependencies:
     ```bash
     npm install
 4. Start the development server:
     ```bash
     npm run dev
-
 ---
 
 ## 💻 My other projects
 
-### 🔎📷 Lensea — search images app
+### "Luna" — Todo manager & Time Tracker
 
-[Demo](https://lensea-search-images-ds0kw8wom-sofis-projects-f6b2a04f.vercel.app/) |
-[Github](https://github.com/sofi-dobriak/lensea-search-images-app)
-
-### 💫 Nexus — Phonebook App
-
-[Demo](https://nexus-phonebook-app.vercel.app/) |
-[Github](https://github.com/sofi-dobriak/nexus-phonebook-app)
+[Demo](https://luna-todo-manager.vercel.app/) |
+[Github](https://github.com/sofi-dobriak/luna-todo-manager)
 
 ---
 
