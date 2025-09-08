@@ -97,7 +97,9 @@ function App() {
           />
         )}
 
-        {data && <Pagination totalPages={data?.totalPages} page={page} setPage={setPage} />}
+        {data && data?.notes.length !== 0 && (
+          <Pagination totalPages={data?.totalPages} page={page} setPage={setPage} />
+        )}
         {isError && <InfoMessage>Something went wrong {error?.message}</InfoMessage>}
         {data?.notes.length === 0 && <InfoMessage>No matching list of notes</InfoMessage>}
       </main>
