@@ -1,0 +1,85 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v29-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/montserrat-v29-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/montserrat-v29-latin-600.woff2') format('woff2');
+}
+
+:root {
+  /* font */
+  --font-family: "Montserrat", sans-serif;
+  --font-size: 16px;
+  --line-height: 1.5;
+
+  /* text color */
+  --main-text-color: #ebebeb;
+  --secondary-text-color: #3D2C4A;
+  --tertiary-text-color: #5D4E75;
+
+  /* bg color */
+  --main-bg-color: rgba(115, 83, 141, 0.85);
+  --secondary-bg-color: #3D2C4A;
+  --tertiary-bg-color: #D6CEDF;
+
+  /* pagination */
+  --pagination-bg-color: rgba(86, 62, 105, 0.85);
+
+  /* border */
+  --border-color: #B5A7C9;
+
+  /* button color */
+  --main-button-bg-color: rgba(61, 44, 74, 0.85);
+  --main-button-bg-color-hover: #493e5b;
+  --secondary-button-bg-color: #ebebeb;
+  --secondary-button-bg-color: #ebebeb;
+  --tertiary-button-bg-color: #c94536d6;
+  --tertiary-button-bg-color-hover: #bb2d3b;
+
+  /* backdrop */
+  --main-backdrop-color: #7756902d;
+
+  /* transition */
+  --transition: 0.2s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  background-color: var(--secondary-bg-color);
+  color: var(--main-text-color);
+  line-height: var(--line-height);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

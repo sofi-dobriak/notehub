@@ -1,0 +1,70 @@
+.searchInputButtonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid transparent;
+  gap: 12px;
+  border-radius: 4px;
+  background-color: var(--secondary-bg-color);
+  transition: border-color var(--transition);
+  padding: 6px 12px;
+
+  &:hover,
+  &:focus-within {
+    border-color: var(--border-color);
+  }
+}
+
+.searchInput {
+  flex: 1;
+  max-width: 240px;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  color: var(--main-text-color);
+
+  &::placeholder {
+    color: var(--main-text-color);
+  }
+
+  &:focus {
+    border-color: var(--border-color);
+    outline: none
+  }
+}
+
+.clearSearchButton {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: all var(--transition);
+  cursor: pointer;
+}
+
+.isVisible {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.clearSearchIcon {
+  font-size: 20px;
+  color: var(--main-text-color)
+}
+
+@media screen and (max-width:767px) {
+  .searchInputButtonContainer {
+    border: 1px solid var(--main-text-color);
+    width: 100%;
+    max-width: 670px;
+    margin: 120px auto 0;
+    display: flex;
+  }
+}

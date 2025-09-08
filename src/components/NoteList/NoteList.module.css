@@ -1,0 +1,116 @@
+.list {
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+
+  padding: 0;
+  margin-top: 120px;
+  margin-bottom: 40px;
+}
+
+.listItem {
+  color: var(--main-text-color);
+
+  background-color: var(--main-bg-color);
+  border: 1px solid transparent;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 16px;
+  min-height: 180px;
+
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--main-text-color);
+  margin: 0 0 8px 0;
+}
+
+.content {
+  font-size: 14px;
+  color: var(--main-text-color);
+
+  flex-grow: 1;
+  margin-bottom: 12px;
+  margin: 0;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.button {
+  font-size: 14px;
+  color: var(--main-text-color);
+
+  background-color: var(--tertiary-button-bg-color);
+  border: none;
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  padding: 6px 12px;
+  width: 100%;
+  min-width: 70px;
+
+  transition: background-color 0.2s ease;
+
+  &:hover,
+  &:focus {
+    background-color: var(--tertiary-button-bg-color-hover);
+  }
+
+  &.edit:hover,
+  &.edit:focus {
+    background-color: var(--main-button-bg-color-hover);
+  }
+}
+
+.edit {
+  background-color: var(--main-button-bg-color);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.tag {
+  display: inline-block;
+
+  font-size: 12px;
+  color: var(--main-text-color);
+
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+
+  padding: 4px 8px;
+  max-width: 100px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width:767px) {
+  .list {
+    margin-top: 40px;
+  }
+}

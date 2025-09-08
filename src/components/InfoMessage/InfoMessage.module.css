@@ -1,0 +1,13 @@
+.infoBlock {
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  width: 100%;
+}
+
+.infoMessage {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
+}
