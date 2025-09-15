@@ -15,7 +15,7 @@ const ConfirmModalContent = ({ onClose, onDelete }: ConfirmModalContentProps) =>
           className={css.cancelButton}
           aria-label='Close modal window'
         >
-          Close
+          Cancel
         </button>
         <button onClick={onDelete} className={css.deleteButton} aria-label='Delete a note'>
           Delete

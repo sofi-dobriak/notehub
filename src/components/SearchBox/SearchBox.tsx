@@ -13,7 +13,7 @@ const SearchBox = ({ query, setQuery }: SearchBoxProps) => {
   const [inputValue, setInputValue] = useState('');
 
   const handleSearch = useDebouncedCallback((value: string) => {
-    setQuery(value);
+    setQuery(value.trim());
   }, 500);
 
   const handleClearInput = () => {

@@ -5,7 +5,7 @@
   border: 1px solid transparent;
   gap: 12px;
   border-radius: 4px;
-  background-color: var(--secondary-bg-color);
+  background-color: var(--main-bg-color);
   transition: border-color var(--transition);
   padding: 6px 12px;
 
