@@ -27,7 +27,7 @@ const SearchBox = ({ query, setQuery }: SearchBoxProps) => {
         className={css.searchInput}
         type='text'
         name='search notes'
-        placeholder='Search notes'
+        placeholder='Search notes...'
         value={inputValue}
         onChange={e => {
           setInputValue(e.target.value);
